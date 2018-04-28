@@ -43,4 +43,4 @@ List of available validations.
 
 - **isEmail(value, message)** - check valid email
 
-[travis-url]:https://travis-ci.org/tarunbatra/titan-check-validator
+[travis-image]:https://img.shields.io/travis/tarunbatra/password-validator.svg?style=flat-square
