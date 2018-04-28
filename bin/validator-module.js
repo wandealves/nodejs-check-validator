@@ -1,1 +1,0 @@
-var lib= require('../lib/index.js');
