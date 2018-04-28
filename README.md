@@ -1,11 +1,8 @@
 # check-validator
 Check validation for node.js
 
-[![logo][logo-image]][logo-url]
-
 [![build status][travis-image]][travis-url]
 [![npm version][npm-image]][npm-url]
-[![npm downloads][downloads-image]][npm-url]
 
 Check validator that enables validation on multiple parameters at once.
 
@@ -47,10 +44,7 @@ List of available validations.
 
 - **isEmail(value, message)** - check valid email
 
-[logo-image]: http://res.cloudinary.com/tbking/image/upload/v1490803400/password-validator/logo.png
-[logo-url]: http://tarunbatra.github.io/password-validator
-[npm-image]: https://img.shields.io/npm/v/password-validator.svg?style=flat-square
-[npm-url]: https://www.npmjs.com/package/password-validator
+[npm-image]: https://www.npmjs.com/package/titan-check-validator
+[npm-url]: https://www.npmjs.com/package/titan-check-validator
 [travis-image]:https://img.shields.io/travis/tarunbatra/password-validator.svg?style=flat-square
-[travis-url]:https://travis-ci.org/tarunbatra/password-validator
-[downloads-image]: https://img.shields.io/npm/dt/password-validator.svg?style=flat-square
+[travis-url]:https://travis-ci.org/tarunbatra/titan-check-validator

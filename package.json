@@ -1,5 +1,5 @@
 {
-  "name": "check-validator",
+  "name": "titan-check-validator",
   "version": "1.0.0",
   "description": "Check valifator nodejs",
   "main": "./bin/validator-module.js",
