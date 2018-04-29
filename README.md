@@ -45,6 +45,6 @@ List of available validations.
 - **isEmail(value, message)** - check valid email
 
 [npm-image]: https://img.shields.io/npm/v/password-validator.svg?style=flat-square
-[npm-url]: https://www.npmjs.com/package/titan-check-validator
+[npm-url]: https://www.npmjs.com/package/check-validator
 [travis-image]:https://img.shields.io/travis/tarunbatra/password-validator.svg?style=flat-square
-[travis-url]:https://travis-ci.org/tarunbatra/titan-check-validator
+[travis-url]:https://travis-ci.org/tarunbatra/check-validator
