@@ -1,6 +1,6 @@
 {
-  "name": "titan-check-validator",
-  "version": "1.0.2",
+  "name": "check-validator",
+  "version": "1.0.3",
   "description": "Check valifator nodejs",
   "main": "lib/index.js",
   "repository": {
