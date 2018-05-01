@@ -79,4 +79,3 @@ List of available validations.
 [npm-url]: https://www.npmjs.com/package/check-validator
 [travis-image]:https://img.shields.io/travis/tarunbatra/password-validator.svg?style=flat-square
 [travis-url]:https://travis-ci.org/tarunbatra/check-validator
-[test]:npm run test:unit
