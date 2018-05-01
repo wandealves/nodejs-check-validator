@@ -13,7 +13,7 @@ Check validator that enables validation on multiple parameters at once.
 npm i check-validator
 ```
 
-### Bic usagase
+### Basic usage
 
 ```
 let CheckValidator = require('check-validator');

@@ -1,6 +1,6 @@
 {
   "name": "check-validator",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Check valifator nodejs",
   "main": "lib/index.js",
   "repository": {
