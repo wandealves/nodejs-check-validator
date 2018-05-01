@@ -61,7 +61,7 @@ List of available validations.
 ## Props and Methods
 
 | Method/Prop | Desc | Test | Status | async |
-|---|---|---|---|
+|---|---|---|---|---|
 | errors | Return a list of errors | OK | Ready | NO |
 | clear () | Clear the error list | OK | Ready | NO |
 | isValid () | verify the validity | OK | Ready | NO |
