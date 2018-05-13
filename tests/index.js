@@ -108,11 +108,10 @@ describe('Check Validator', function () {
             }
         });
     });
-    describe('function isRequired and isEmail', function () {
-        it('Not reported and inalid email', function () {
+    describe('function isNumber', function () {
+        it("t's not a number", function () {
             validator = new CheckValidator();
-            validator.isRequired('', 'Not reported');
-            validator.isEmail('email$email.com','Invalid email');
+            validator.isNumber('test', "t's not a number");
             if (!validator.isValid()) {
                 assert.ok(true);
             } else {
@@ -120,4 +119,37 @@ describe('Check Validator', function () {
             }
         });
     });
+    describe('function isRequired and isEmail', function () {
+        it('Not reported and inalid email', function () {
+            validator = new CheckValidator();
+            validator.isRequired('', 'Not reported');
+            validator.isEmail('email$email.com', 'Invalid email');
+            if (!validator.isValid()) {
+                assert.ok(true);
+            } else {
+                assert.ok(false);
+            }
+        });
+    });
+
+    describe('test examples', function () {
+        it('All test examples', function () {
+            let validator = new CheckValidator();
+
+            //examples: hasMinLen, hasMaxLen, isEmail
+            validator.hasMinLen('Hulk', 5, 'Value cannot be less than 5 characters');
+            validator.hasMaxLen('Avengers infinity war', 6, 'Value can not be longer than 6 characters');
+            validator.isEmail('thanos.com', 'Invalid email');
+
+            if (!validator.isValid()) {
+                assert.ok(true);
+            } else {
+                assert.ok(false);
+            }
+            
+            //erros
+            console.log(validator.errors());
+        });
+    });
+
 });

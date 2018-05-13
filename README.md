@@ -19,15 +19,21 @@ npm i check-validator
 let CheckValidator = require('check-validator');
 let validator =  new CheckValidator();
 
-validator.hasMinLen('Hulk', 2, 'Value cannot be less than 4 characters');
+validator.hasMinLen('Hulk', 5, 'Value cannot be less than 4 characters');
 
-if (!validator.isValid()){
-	try {
-		throw new Error('Invalid');
-	} catch (e) {
-		console.log(e);
-	}
+//examples: hasMinLen, hasMaxLen, isEmail
+validator.hasMinLen('Hulk', 5, 'Value cannot be less than 5 characters');
+validator.hasMaxLen('Avengers infinity war', 6, 'Value can not be longer than 6 characters');
+validator.isEmail('thanos.com', 'Invalid email');
+
+if (!validator.isValid()) {
+	console.log('Validation errors');
+} else {
+	console.log('There were no validation errors');
 }
+
+//erros
+console.log(validator.errors());
 ```
 ## Simple validation
 
@@ -39,20 +45,23 @@ List of available validations.
 
 ### String
 
-- **hasMinLen(value, text)** (value, min, message) - check if value is less than the parameter min informed
-- **hasMaxLen(value, max, message)** - check if value is bigger than the parameter max informed
-- **isFixedLen(value, len, message)** - check if value is different than the parameter len informed
-- **isRequired(value, message)** - check if value is required
+- **hasMinLen(value, text)** (value, min, message) - Check if value is less than the parameter min informed
+- **hasMaxLen(value, max, message)** - Check if value is bigger than the parameter max informed
+- **isFixedLen(value, len, message)** - Check if value is different than the parameter len informed
+- **isRequired(value, message)** - Check if value is required
 - **isString(value, message)** - Determines if a reference is a `String`.
 
 ### Email
 
-- **isEmail(value, message)** - check valid email
+- **isEmail(value, message)** - Check valid email
+
+### Number
+
+- **isNumber(value, message, errors)** - Determines if a reference is a Number.
 
 ### Other
 
 - **isUndefined(value, message)** - Determines if a reference is undefined.
-- **isDefined(value, message)** - Determines if a reference is defined.
 - **isDate(value, message)** - Determines if a value is a date.
 - **isArray(value, message)** - Determines if a reference is an Array. Alias of Array.isArray.
 
@@ -73,9 +82,9 @@ List of available validations.
 | isUndefined (value, message |   | OK |  Ready | NO |
 | isDate (value, message) |   | OK |  Ready | NO |
 | isArray (value, message) |   | OK |  Ready | NO |
+| isNumber (value, message) |   | OK |  Ready | NO |
 
 [npm-image]: https://img.shields.io/npm/v/password-validator.svg?style=flat-square
 [npm-url]: https://www.npmjs.com/package/check-validator
 [travis-image]:https://img.shields.io/travis/tarunbatra/password-validator.svg?style=flat-square
 [travis-url]:https://travis-ci.org/tarunbatra/check-validator
-[test]:npm run test:unit
