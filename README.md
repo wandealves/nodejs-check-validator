@@ -19,8 +19,6 @@ npm i check-validator
 let CheckValidator = require('check-validator');
 let validator =  new CheckValidator();
 
-validator.hasMinLen('Hulk', 5, 'Value cannot be less than 4 characters');
-
 //examples: hasMinLen, hasMaxLen, isEmail
 validator.hasMinLen('Hulk', 5, 'Value cannot be less than 5 characters');
 validator.hasMaxLen('Avengers infinity war', 6, 'Value can not be longer than 6 characters');
