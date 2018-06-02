@@ -55,7 +55,14 @@ List of available validations.
 
 ### Number
 
-- **isNumber(value, message, errors)** - Determines if a reference is a Number.
+- **isNumber(value, message)** - Determines if a reference is a Number.
+- **isGreaterThan(value, comparer, message)** - Is greater than.
+- **isGreaterOrEqualsThan(value, comparer, message)** - Is greater or equals than.
+- **isLowerThan(value, comparer, message)** - Is lower than.
+- **isLowerOrEqualsThan(value, comparer, message)** - Is lower or equals than.
+- **areEquals(value, comparer, message)** - Are equals.
+- **areNotEquals(value, comparer, message)** - Are not equals.
+- **isBetween(value, from, to, message)** - Is between.
 
 ### Other
 
@@ -81,6 +88,13 @@ List of available validations.
 | isDate (value, message) |   | OK |  Ready | NO |
 | isArray (value, message) |   | OK |  Ready | NO |
 | isNumber (value, message) |   | OK |  Ready | NO |
+| isGreaterThan (value, comparer, message) |   | OK |  Ready | NO |
+| isGreaterOrEqualsThan (value, comparer, message) |   | OK |  Ready | NO |
+| isLowerThan (value, comparer, message) |   | OK |  Ready | NO |
+| isLowerOrEqualsThan (value, comparer, message) |   | OK |  Ready | NO |
+| areEquals (value, comparer, message) |   | OK |  Ready | NO |
+| areNotEquals (value, comparer, message) |   | OK |  Ready | NO |
+| isBetween (value, from, to, message) |   | OK |  Ready | NO |
 
 [npm-image]: https://img.shields.io/npm/v/password-validator.svg?style=flat-square
 [npm-url]: https://www.npmjs.com/package/check-validator

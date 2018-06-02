@@ -119,6 +119,83 @@ describe('Check Validator', function () {
             }
         });
     });
+    describe('function isGreaterThan', function () {
+        it("is greater than", function () {
+            validator = new CheckValidator();
+            validator.isGreaterThan(10, 20, "is greater than");
+            if (!validator.isValid()) {
+                assert.ok(true);
+            } else {
+                assert.ok(false);
+            }
+        });
+    });
+    describe('function isGreaterOrEqualsThan', function () {
+        it("is greater or equals than", function () {
+            validator = new CheckValidator();
+            validator.isGreaterOrEqualsThan(5, 15, "is greater or equals than");
+            if (!validator.isValid()) {
+                assert.ok(true);
+            } else {
+                assert.ok(false);
+            }
+        });
+    });
+    describe('function isLowerThan', function () {
+        it("is greater or equals than", function () {
+            validator = new CheckValidator();
+            validator.isLowerThan(99, 1, "is lower than");
+            if (!validator.isValid()) {
+                assert.ok(true);
+            } else {
+                assert.ok(false);
+            }
+        });
+    });
+    describe('function isLowerOrEqualsThan', function () {
+        it("is lower or equals than", function () {
+            validator = new CheckValidator();
+            validator.isLowerOrEqualsThan(99, 1, "is lower or equals than");
+            if (!validator.isValid()) {
+                assert.ok(true);
+            } else {
+                assert.ok(false);
+            }
+        });
+    });
+    describe('function areEquals', function () {
+        it("are equals", function () {
+            validator = new CheckValidator();
+            validator.areEquals(1, 2, "are equals");
+            if (!validator.isValid()) {
+                assert.ok(true);
+            } else {
+                assert.ok(false);
+            }
+        });
+    });
+    describe('function areNotEquals', function () {
+        it("are not equals", function () {
+            validator = new CheckValidator();
+            validator.areNotEquals(1, 1, "are not equals");
+            if (!validator.isValid()) {
+                assert.ok(true);
+            } else {
+                assert.ok(false);
+            }
+        });
+    });
+    describe('function isBetween', function () {
+        it("is between", function () {
+            validator = new CheckValidator();
+            validator.isBetween(10, 9, 8, "is between");
+            if (!validator.isValid()) {
+                assert.ok(true);
+            } else {
+                assert.ok(false);
+            }
+        });
+    });
     describe('function isRequired and isEmail', function () {
         it('Not reported and inalid email', function () {
             validator = new CheckValidator();
@@ -146,7 +223,7 @@ describe('Check Validator', function () {
             } else {
                 assert.ok(false);
             }
-            
+
             //erros
             console.log(validator.errors());
         });
